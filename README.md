@@ -13,7 +13,7 @@ This version of sdb_fdw only works with PostgreSQL Version 9.3.4. Please ensure 
     # ./configure
     # make && make install
     ```
-If you want to choose different path than /usr/local/pgsql, you can specify prefix to specify pgsql934
+   If you want to choose different path than /usr/local/pgsql, you can specify prefix to specify pgsql934
 eg: ./configure --prefix=/usr/local/pgsql934
 3. Export PostgreSQL installation's `bin` directory to PATH. For example:
     ```
