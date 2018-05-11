@@ -19,7 +19,7 @@ eg: ./configure --prefix=/usr/local/pgsql934
     ```
     # export PATH=/usr/local/pgsql934:$PATH
     ```
-4. Copy SequoiaDB C driver to this folder in a new folder named 'sdbdriver'. You can find the driver in SequoiaDB installation directory, or just download the driver package from SequoiaDB<http://download.sequoiadb.com/cn/> official website. For example:
+4. Copy SequoiaDB C driver to this folder in a new folder named 'sdbdriver'. You can find the driver in SequoiaDB installation directory, or just download the driver package from [SequoiaDB official website](http://download.sequoiadb.com/cn/). For example:
     ```
     # DRIVER_PATH=/opt/sequoiadb
     # mkdir sdbdriver
