@@ -5,7 +5,7 @@ SequoiaDB Foreign Data Wrapper(sdb_fdw) is a PostgreSQL extension to access to S
 
 Building
 --------
-This version of sdb_fdw only works with PostgreSQL Version 9.3.4. Please ensure that it's installed in your computer. If it has, you can skip step 1-2.
+This version of sdb_fdw only works with PostgreSQL Version 9.3.4. You can skip step 1 and 2 if already PG 9.3.4 is already installed..
 1. Download [postgresql-9.3.4.tar.gz](https://www.postgresql.org/ftp/source/v9.3.4/) and extract it.
 
 2. Make and install postgresql
@@ -13,13 +13,13 @@ This version of sdb_fdw only works with PostgreSQL Version 9.3.4. Please ensure 
     # ./configure
     # make && make install
     ```
-   If you want to choose different path than /usr/local/pgsql, you can specify prefix to specify pgsql934
+   If you want to choose a different path than /usr/local/pgsql, you can specify prefix to specify pgsql934
 eg: ./configure --prefix=/usr/local/pgsql934
-3. Export PostgreSQL installation's `bin` directory to PATH. For example:
+3. Export PostgreSQL installation's `bin` directory to PATH enviornment variable. For example:
     ```
     # export PATH=/usr/local/pgsql934:$PATH
     ```
-4. Copy SequoiaDB C driver to this folder in a new folder named 'sdbdriver'. You can find the driver in SequoiaDB installation directory, or just download the driver package from [SequoiaDB official website](http://download.sequoiadb.com/cn/). For example:
+4. Create and copy SequoiaDB's C driver to a subdirectory called 'sdbdriver' in PG's installation path. You can find the driver in SequoiaDB installation directory, or just download the driver package from [SequoiaDB official website](http://download.sequoiadb.com/cn/). For example:
     ```
     # DRIVER_PATH=/opt/sequoiadb
     # mkdir sdbdriver
