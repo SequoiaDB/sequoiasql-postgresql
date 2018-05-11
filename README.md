@@ -6,7 +6,7 @@ SequoiaDB Foreign Data Wrapper(sdb_fdw) is a PostgreSQL extension to access to S
 Building
 --------
 This version of sdb_fdw only works with PostgreSQL Version 9.3.4. Please ensure that it's installed in your computer. If it has, you can skip step 1-2.
-1. Download postgresql-9.3.4.tar.gz<https://www.postgresql.org/ftp/source/v9.3.4/> and extract it.
+1. Download [postgresql-9.3.4.tar.gz](https://www.postgresql.org/ftp/source/v9.3.4/) and extract it.
 
 2. Make and install postgresql
     ```
