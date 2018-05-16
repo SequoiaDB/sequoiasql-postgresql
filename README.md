@@ -5,7 +5,7 @@ SequoiaDB Foreign Data Wrapper(sdb_fdw) is a PostgreSQL extension to access to S
 
 Building
 --------
-This version of sdb_fdw only works with PostgreSQL Version 9.3.4. You can skip step 1 and 2 if already PG 9.3.4 is already installed..
+This version of sdb_fdw only works with PostgreSQL Version 9.3.4. You can skip step 1 and 2 if PG 9.3.4 has already been installed.
 1. Download [postgresql-9.3.4.tar.gz](https://www.postgresql.org/ftp/source/v9.3.4/) and extract it.
 
 2. Make and install postgresql
@@ -19,7 +19,7 @@ eg: ./configure --prefix=/usr/local/pgsql934
     ```
     # export PATH=/usr/local/pgsql934:$PATH
     ```
-4. Create and copy SequoiaDB's C driver to a subdirectory called 'sdbdriver' in PG's installation path. You can find the driver in SequoiaDB installation directory, or just download the driver package from [SequoiaDB official website](http://download.sequoiadb.com/cn/). For example:
+4. Copy SequoiaDB's C driver to a subdirectory called 'sdbdriver' in this sdb_fdw directory. You can find the driver in SequoiaDB installation directory, or just download the driver package from [SequoiaDB official website](http://download.sequoiadb.com/cn/index-cat_id-2). For example:
     ```
     # DRIVER_PATH=/opt/sequoiadb
     # mkdir sdbdriver
